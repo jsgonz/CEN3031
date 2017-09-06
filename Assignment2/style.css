@@ -1,3 +1,20 @@
+body {
+  background-color: DarkOrange;
+}
+
+h1 {
+  color: white;
+}
+
+td {
+  background-color: DodgerBlue;
+}
+
+th {
+  background-color: DimGray;
+  color: white;
+}
+
 #searchBar {
   margin: 15px 10px;
 }
@@ -5,4 +22,16 @@
 .tableWrapper {
   max-height: 400px;
   overflow: auto;
+  border-radius: 25px;
+  margin-bottom: 15px;
+}
+
+.modal-content {
+  background-color: DodgerBlue;
+  width: 400px;
+}
+
+.jumbotron {
+  background-color: DimGray;
+  color: white;
 }

@@ -18,6 +18,7 @@ angular.module('listings')
       }
 
       Listings.unshift(listing);
+      $scope.listings = Listings;
 
       $scope.c = undefined;
       $scope.n = undefined;
@@ -41,17 +42,18 @@ angular.module('listings')
       var name = undefined;
       var code = undefined;
 
-      if(value === ""){
+      if(value === "") {
         $scope.listings = originalList;
-      }else{
-        for(var i = 0; i < originalList.length; i++){
+      } else {
+        for(var i = 0; i < originalList.length; i++) {
           name = originalList[i].name.toLowerCase();
           code = originalList[i].code.toLowerCase();
 
-          if(name.includes(value) || code.includes(value)){
+          if(name.includes(value) || code.includes(value)) {
             filteredList.push(originalList[i]);
           }
         }
+
         $scope.listings = filteredList;
       }
     };
